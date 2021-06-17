@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileUpload">
+
+
+    <RelativeLayout
+        android:id="@+id/txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Title: "
+            android:textSize="22sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/title_edit_txt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/title_txt_id" />
+
+
+        <TextView
+
+            android:id="@+id/desc_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_txt_id"
+            android:layout_marginTop="20dp"
+            android:text="Description: "
+            android:textSize="22sp"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_id" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_id"
+        android:background="@color/white">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp" />
+
+
+        <TextView
+            android:id="@+id/upload_img_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="22dp"
+            android:text="Chose File "
+            android:textColor="#08275E"
+            android:textSize="22sp"
+            app:drawableRightCompat="@drawable/upload_icon" />
+
+
+        <Button
+            android:id="@+id/upload_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_img_id"
+            android:layout_margin="20dp"
+            android:text="Upload"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
